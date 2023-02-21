@@ -18,6 +18,12 @@ export default function Home() {
         Simplify proposal and invoice creation with our user-friendly, time-saving tool
         </p>
 
+        <div>
+          <button>Create Proposal</button>
+          <button>Create Invoice</button>
+
+        </div>
+
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
             <h3>Documentation &rarr;</h3>
