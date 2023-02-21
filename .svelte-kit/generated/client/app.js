@@ -1,17 +1,29 @@
-export { matchers } from './matchers.js';
+export { matchers } from "./matchers.js";
 
-export const nodes = [() => import('./nodes/0'),
-	() => import('./nodes/1'),
-	() => import('./nodes/2')];
+export const nodes = [
+  () => import("./nodes/0"),
+  () => import("./nodes/1"),
+  () => import("./nodes/2"),
+  () => import("./nodes/3"),
+  () => import("./nodes/4"),
+  () => import("./nodes/5"),
+  () => import("./nodes/6"),
+];
 
 export const server_loads = [];
 
 export const dictionary = {
-	"/": [2]
+  "/": [2],
+  "/proposal/client-info": [3],
+  "/proposal/legal": [4],
+  "/proposal/project-info": [5],
+  "/proposal/proposal-items": [6],
 };
 
 export const hooks = {
-	handleError: (({ error }) => { console.error(error) }),
+  handleError: ({ error }) => {
+    console.error(error);
+  },
 };
 
-export { default as root } from '../root.svelte';
+export { default as root } from "../root.svelte";
